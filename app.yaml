@@ -1,0 +1,8 @@
+runtime: php55
+
+health_check:
+  enable_health_check: False
+  
+handlers:
+- url: /.*
+  script: index.php

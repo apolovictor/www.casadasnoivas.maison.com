@@ -1,0 +1,546 @@
+html, body, div, span, applet, object, iframe, table, caption,
+tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins,
+kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
+	margin: 0;
+	padding: 0;
+	
+	border: 0;
+	outline: 0;
+	
+	vertical-align: baseline;
+}
+
+body {
+	background: white;
+	
+	color: black;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+}
+
+blockquote, q {
+	quotes: "" "";
+}
+
+* {
+        font-family: 'Helvetica Neue', sans-serif;
+    
+        box-sizing: border-box;     /* =-=-=> Opera. + IE. (8+.) <=-=-= */
+	-webkit-box-sizing: border-box;     /* =-=-=> Google Chrome, Safari. &. Outros WebKits. <=-=-= */
+	-moz-box-sizing: border-box;     /* =-=-=> Mozilla Firefox. &. Outros Geckos. <=-=-= */
+	
+	backface-visibility: hidden;     /* =-=-=> Suavização. <=-=-= */
+	-webkit-backface-visibility: hidden;     /* =-=-=> Google Chrome, Safari. &. Outros WebKits. <=-=-= */
+	-moz-backface-visibility: hidden;     /* =-=-=> Mozilla Firefox. &. Outros Geckos. <=-=-= */
+	-o-backface-visibility: hidden;     /* =-=-=> Opera. &. Outros Geckos. <=-=-= */
+	-ms-backface-visibility: hidden;     /* =-=-=> Internet Explorer. &. Outros Geckos. <=-=-= */
+	
+	transition: ease-in-out 0.3s;     /* =-=-=> Transição. <=-=-= */
+	-webkit-transition: ease-in-out 0.3s;     /* =-=-=> Google Chrome, Safari. &. Outros WebKits. <=-=-= */
+	-moz-transition: ease-in-out 0.3s;     /* =-=-=> Mozilla Firefox. &. Outros Geckos. <=-=-= */
+	-o-transition: ease-in-out 0.3s;     /* =-=-=> Opera. &. Outros Geckos. <=-=-= */
+	-ms-transition: ease-in-out 0.3s;     /* =-=-=> Internet Explorer. &. Outros Geckos. <=-=-= */
+	
+	line-height: 1em;
+        
+}
+
+@font-face {
+	font-family: 'Helvetica Neue';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/HelveticaNeue.eot');
+	src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeue.woff') format('woff'),
+		url('../fonts/HelveticaNeue.ttf')  format('truetype'),
+		url('../fonts/HelveticaNeue.svg#svgFontName') format('svg');
+}
+
+@font-face {
+	font-family: 'Helvetica Neue Light';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/HelveticaNeue-Light.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/HelveticaNeue-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/HelveticaNeue-Light.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/HelveticaNeue-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/HelveticaNeue-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Helvetica Neue Bold';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/HelveticaNeueLTPro-Bd.eot');
+	src: url('../fonts/HelveticaNeueLTPro-Bd.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/HelveticaNeueLTPro-Bd.woff') format('woff'),
+		url('../fonts/HelveticaNeueLTPro-Bd.ttf')  format('truetype'),
+		url('../fonts/HelveticaNeueLTPro-Bd.svg#svgFontName') format('svg');
+}
+/*    
+body{
+
+    background-color: #ffcdd2;
+
+    background: url('../img/background.jpg') no-repeat 50% 0%;
+    background-size: cover;
+
+} 
+*/    
+.wrapper1{
+    
+    width: 100%;
+    
+    
+}
+
+
+.wrapper1 .container1 {
+    
+    margin: 0 auto;
+    
+}
+
+.clearfix{
+    clear: both;
+}
+
+.logo{
+    
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    
+    
+}
+
+.logo img{
+    width: 100%;
+    height: 300px;
+    
+}
+
+#grid-wrapper{
+    
+    width: 100%;
+    margin: 0 auto 20px auto;
+    text-align: center;
+   
+    
+}
+
+.card{
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 345px;
+    background: #f9fbe7;
+    margin: 10px;
+    border: 1px solid #c6c8b5;
+    border-radius: 2px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0 0.5);
+    overflow: hidden;
+    text-align: center;
+}
+
+.app-img-wrapper{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    border-radius: 4px;
+    overflow: hidden;
+    top: 0;
+    
+}
+
+img.app-img{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    background: #f9fbe7;
+    
+}
+
+.title-bar{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 40px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+h1.card-title{
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    display: inline-block;
+    color: #000;
+    font-size: 18px;
+    font-family: Helvetica;
+    pointer-events: none;
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    transition: all 225ms ease-in-out;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.wrapper1 .container1 .content1{
+    
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.wrapper1 .container1 header.logo2{
+    
+    margin: 0 auto;
+    width: 762px;
+    height: 179px;
+    margin-top: 122px;
+    
+}
+
+.wrapper1 .container1 .content1 .title{
+    
+    margin-top: 40px;
+    text-align: center;
+    
+    
+}
+
+.wrapper1 .container1 .content1 .title img{
+    
+    padding-right: 11px;
+    
+}
+
+.wrapper1 .container1 .content1 .title h1{
+    letter-spacing: -1px;
+    font-size: 26px;
+    color: #005e32;
+    font-weight: 200;
+}
+
+.wrapper1 .container1 .content1 .title h1 strong{
+    
+    font-weight: 700;
+    color: #f3a01e;
+    
+}
+
+.wrapper1 .container1 .content1 .subTitle h2{
+    
+    font-size: 19px;
+    margin-top: 29px;
+    font-weight: 300;
+    margin-bottom: 36px;
+    
+}
+
+.wrapper1 .container1 .content1 .leftCol{
+    
+    width: 400px;
+    float: left;
+    padding-right: 10px;
+    
+}
+
+.wrapper1 .container1 .content1 .leftCol form input, select{
+    
+    margin-top: 11px;
+    margin-bottom: 11px;
+    width: 390px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f3a01e;
+    color: #fff;
+    padding: 5px;
+    
+}
+
+.wrapper1 .container1 .content1 .leftCol form input[type=submit]{
+    
+    width: 82px;
+    height: 41px;
+    float: right;
+    
+}
+
+.wrapper1 .container1 .content1 .leftCol form h3{
+    
+    font-size: 15px;
+    font-weight: 300;
+    
+}
+
+.wrapper1 .container1 .content1 .leftCol form h3 strong{
+    
+    color: red;
+    
+}
+
+.wrapper1 .container1 .content1 .rightCol{
+    
+    float: right;
+    width: 447px;
+    
+}
+
+.wrapper1 .container1 .content1 .rightCol ul{
+ 
+    text-decoration: none;
+    
+}
+
+.wrapper1 .container1 .content1 .rightCol ul li{
+ 
+    text-decoration: none;
+    list-style-type: none;
+    margin-bottom: 20px;
+    
+}
+
+.wrapper1 .container1 .content1 .rightCol ul li .advantagesIcon {
+ 
+    float: left;
+    margin-right: 10px;
+    
+    
+}
+
+.wrapper1 .container1 .content1 .rightCol ul li .advantagesText {
+    
+    padding-top: 10px;
+    
+}
+
+.wrapper1 .container1 .content1 .rightCol ul li .advantagesText p {
+ 
+    font-style: italic;
+    color: #f3a01e;
+    font-weight: 300;
+    
+}
+
+.wrapper1 .container1 .content1 .rightCol ul li .advantagesText p strong{
+    
+    font-weight: 700;
+    
+}
+
+.picture > img{
+    
+    float: right;
+    margin-right: -50px;
+    
+}
+
+footer{
+    
+    width: 100%;
+    margin-top: -50px;
+}
+
+footer .footerContainer{
+    
+    width: 900px;
+    min-width: 900px;
+    margin: 0 auto;
+    
+}
+
+footer .fanPage{
+    
+    width: 880px;
+    height: auto;
+    text-align: center;
+    position: relative;
+    
+}
+
+footer .fanPage h1{
+    
+    letter-spacing: -1px;
+    font-size: 26px;
+    color: #fff;
+    font-weight: 200;
+    margin-bottom: 22px;
+    text-align: center;
+    
+}
+
+#elite{
+    
+    color: #005e32;
+    
+}
+
+#preparatorio{
+    
+     color: #f3a01e;
+    
+}
+
+.steps{
+    
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    
+    
+}
+
+.stepLogo{
+    
+    margin-bottom: 50px;
+    
+}
+
+.stepBysteps .stepBystepsText h1{
+    
+    letter-spacing: -1px;
+    font-size: 26px;
+    color: #005e32;
+    font-weight: 200;
+    font-style: italic;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 21px;
+}
+
+.stepBysteps .stepBystepsText h1 strong{
+    
+    font-weight: 700;
+    
+}
+
+.stepBystepsText{
+    
+    width: 840px;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.stepBystepsNumber{
+
+    background-color: #005e32;
+    border-radius: 20px;
+    padding: 9px 14px 8px 14px;
+    float: left;
+    margin-right: 10px;
+    
+}
+
+.stepBystepsNumber span{
+    
+    font-size: 21px;
+    color: #fff;
+    font-weight: 700;
+    
+}
+
+.stepBysteps ul li{
+    
+    text-decoration: none;
+    list-style-type: none;
+    margin-bottom: 30px;
+    
+}
+
+.successRegistrationbreakLine{
+    
+    margin-bottom: 140px;   
+    
+}
+
+.creditsFooter{
+    
+    width: 100%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    
+    
+}
+
+.creditsFooter span{
+    
+    font-size: 13px;
+    
+    
+}
+
+.creditsFooter .creditsLeft{
+    
+    float: left;
+    width: 400px;
+}
+
+.creditsFooter .creditsCenter{
+    
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+
+.creditsFooter .creditsRight{
+    
+    float: right;
+    width: 350px;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.fb-like{
+    
+    top: 83px;
+    left: 65px;
+    
+}
+
+.messageError{
+    
+        width: 75%; 
+        float: left; 
+        margin-top: 11px; 
+        padding-top: 11px; 
+        text-align: left; 
+        color: red;
+    
+}
