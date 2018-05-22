@@ -12,7 +12,7 @@
     <title>Casa das Noivas</title>
 
     
-    <link rel="stylesheet" type="text/css" href="casadasnoivas-maison-com/others/css/style.css" />
+    <link rel="stylesheet" type="text/css" href=" project-casadasnoivas-maison.appspot.com/others/css/style.css" />
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
    <link rel="stylesheet" 
     href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.red-purple.min.css" /> 
@@ -32,4 +32,4 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
     
-   <?php  session_start(); // Inicia a sessão  ?>
+   

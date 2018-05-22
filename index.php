@@ -3,7 +3,7 @@
 <!-- Uses a transparent header that draws on top of the layout's background -->
 <style>
 .demo-layout-transparent {
-  background: url('casadasnoivas-maison-com/others/img/capa2.jpeg') center / cover;
+  background: url(' project-casadasnoivas-maison.appspot.com /others/img/capa2.jpeg') center / cover;
   margin-top: -40px;
 }
 .demo-layout-transparent .mdl-layout__header,
